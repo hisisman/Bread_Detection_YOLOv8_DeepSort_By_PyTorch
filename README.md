@@ -2,6 +2,8 @@
 
 Run steps:
 
+go to \ultralytics\yolo\v8\detect\detection-1 directory
+
 1-) python train.py model=yolov8s.pt data='detection-1/custom-data.yaml' epochs=50 imgsz=640
 
 2-) python val.py model='\runs\detect\train8\weights\best.pt' data='\ultralytics\yolo\v8\detect\detection-1\custom-data.yaml'
